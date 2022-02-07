@@ -1,10 +1,8 @@
-### Practical task
+### Practical task for company "Godel Technologies"
 
-Using the provided skeleton, implement the REST service.
+I'm using a skeleton, which proposed by company "Godel Technologies": https://github.com/java-mastery-brest/simplewebapp
 
-Useful link: https://spring.io/guides/gs/rest-service/
-
-In addition you could use Swagger to provide API documentation.
+//In addition you could use Swagger to provide API documentation.
         
         
   
