@@ -19,16 +19,20 @@ public class Employee {
     @Column(name = "department_id")
     private Long departmentId;
 
+    @Column(name = "job_title")
+    private JobTitle jobTitle;
+
     @Column(name = "gender")
     private Gender gender;
 
     public Employee(){}
 
-    public Employee(long id, String firstName, String lastName, Long departmentId, Gender gender){
+    public Employee(long id, String firstName, String lastName, Long departmentId, JobTitle jobTitle, Gender gender){
         this.employeeId = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.departmentId = departmentId;
+        this.jobTitle = jobTitle;
         this.gender = gender;
     }
 
@@ -36,7 +40,7 @@ public class Employee {
         return employeeId;
     }
 
-    public void setEmployeeId(long id){ this.employeeId = id;}
+    //public void setEmployeeId(long id){ this.employeeId = id;}
 
     public String getFirstName() {
         return firstName;
@@ -54,19 +58,27 @@ public class Employee {
         this.lastName = lastName;
     }
 
-    public Gender getGender() {
-        return gender;
-    }
-
-    public void setGender(Gender gender) {
-        this.gender = gender;
-    }
-
     public Long getDepartmentId() {
         return departmentId;
     }
 
     public void setDepartmentId(Long departmentId) {
         this.departmentId = departmentId;
+    }
+
+    public JobTitle getJobTitle() {
+        return jobTitle;
+    }
+
+    public void setJobTitle(JobTitle jobTitle) {
+        this.jobTitle = jobTitle;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 }
